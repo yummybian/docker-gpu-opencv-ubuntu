@@ -14,14 +14,15 @@ ENV OPENCL_ENABLED=OFF
 LABEL com.nvidia.cudnn.version="${CUDNN_VERSION}"
 # build and install opencv
 RUN apt-get update && apt-get install -y --no-install-recommends \
-     build-essential \
-     ca-certificates \
-     wget \
-     libopencv-dev \
-     cmake \
-     g++ \
-     unzip \
-     x264 ;\
+    build-essential \
+    ca-certificates \
+    wget \
+    libopencv-dev \
+    cmake \
+    g++ \
+    unzip \
+    x264 \
+    git ;\
     mkdir -p /src && \
     cd /src && \
     mkdir -p $OPENCV_DIR && \
