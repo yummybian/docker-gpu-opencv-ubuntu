@@ -16,6 +16,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     g++ \
     unzip \
     x264 \
+    curl \
     git ;\
     mkdir -p /src && \
     cd /src && \
